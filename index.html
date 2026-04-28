@@ -1,43 +1,3 @@
-<nav style="
-display:flex;
-align-items:center;
-padding:30px 60px;
-position:relative;
-">
-
-<div style="
-position:absolute;
-left:60px;
-color:#22D3EE;
-font-size:20px;
-font-weight:bold;
-">
-DropNest Alpha
-</div>
-
-<div style="
-margin:0 auto;
-display:flex;
-gap:40px;
-">
-
-<a href="#" style="color:white;text-decoration:none;">Home</a>
-
-<a href="#" style="color:white;text-decoration:none;">Airdrops</a>
-
-<a href="#" style="color:white;text-decoration:none;">Testnets</a>
-
-<a href="#" style="color:white;text-decoration:none;">Claims</a>
-
-<a href="#" style="color:white;text-decoration:none;">Contact</a>
-
-</div>
-
-</nav>
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,11 +10,43 @@ margin:0;
 font-family:Arial;
 background:linear-gradient(135deg,#0B1020,#111827);
 color:white;
-text-align:center;
+}
+
+nav{
+display:flex;
+align-items:center;
+padding:30px 60px;
+position:relative;
+}
+
+.logo{
+position:absolute;
+left:60px;
+color:#22D3EE;
+font-size:20px;
+font-weight:bold;
+}
+
+.menu{
+margin:0 auto;
+display:flex;
+gap:40px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#22D3EE;
+text-shadow:0 0 12px #22D3EE;
 }
 
 .hero{
 padding:120px 20px;
+text-align:center;
 }
 
 h1{
@@ -81,6 +73,10 @@ color:white;
 font-weight:bold;
 }
 
+.btn:hover{
+box-shadow:0 0 20px rgba(139,92,246,.7);
+}
+
 .cards{
 display:flex;
 justify-content:center;
@@ -90,10 +86,6 @@ flex-wrap:wrap;
 }
 
 .card{
-  a:hover{
-color:#22D3EE;
-text-shadow:0 0 10px #22D3EE;
-}
 width:280px;
 padding:30px;
 border-radius:20px;
@@ -105,36 +97,52 @@ box-shadow:0 0 30px rgba(139,92,246,.35);
 .card h2{
 color:#22D3EE;
 }
-
 </style>
 </head>
 
 <body>
 
+<nav>
+<div class="logo">DropNest Alpha</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#airdrops">Airdrops</a>
+<a href="#">Testnets</a>
+<a href="#">Claims</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+
 <section class="hero">
 <h1>DropNest Alpha</h1>
+
 <p>Your Daily Airdrop Intelligence Hub</p>
 
-<a class="btn" href="#">Explore Airdrops</a>
+<a class="btn" href="#airdrops">
+Explore Airdrops
+</a>
+
 </section>
 
-<section class="<section id="airdrops" class="cards">">
+<section id="airdrops" class="cards">
 
 <div class="card">
-<h2>Hot Airdrops</h2>
-<p>Track high-potential opportunities.</p>
+<h2>THEO</h2>
+<p>Status: Active<br>Potential: High</p>
 </div>
 
 <div class="card">
-<h2>Testnets</h2>
-<p>Discover reward farming projects.</p>
+<h2>Billion</h2>
+<p>Claim Open<br>Reward: Medium</p>
 </div>
 
 <div class="card">
-<h2>Claim Alerts</h2>
-<p>Never miss active claims.</p>
+<h2>Monad</h2>
+<p>Watchlist<br>Potential: High</p>
 </div>
 
 </section>
 
 </body>
+</html>
